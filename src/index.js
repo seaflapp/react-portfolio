@@ -1,10 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import './css/index.css';
+import './css/navBarlogo.css' ;
+import './css/App.css' ;
+import NavBarLogo from './components/NavBarLogo';
+import LogoColapsebleNavBar from './components/Test.jsx'
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <App />
+    // <NavBarLogo />
+    < LogoColapsebleNavBar />
 );
 

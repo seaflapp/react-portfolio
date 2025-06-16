@@ -1,11 +1,12 @@
 import './../css/navBarlogo.css';
 import InfoCard from './InfoCard';
+import { Link } from 'react-router-dom';
 
 const LogoColapsebleNavBar = () => {
     return (
         <div className="logo-colapseble-nav-bar">
             <div className="nav-bar">
-                <div className="current-page-name">Current page name</div>
+                <div className="current-page-name">Home</div>
             </div>
             <div className="nav-bar-logo">
                 <div className="logo-frame-wrapper">
@@ -13,22 +14,31 @@ const LogoColapsebleNavBar = () => {
                         <div className="wip" />
                     </div>
                 </div>
-                <div className="home-wrapper">
-                    <div className="home">Home</div>
-                </div>
-                <div className="home-wrapper">
-                    <div className="home">About Me
+                <Link to="/" style={{ textDecoration: 'none', width: '100%' }}>
+                    <div className="home-wrapper">
+                        <div className="home">Home</div>
                     </div>
-                </div>
-                <div className="home-wrapper">
-                    <div className="home">Skills</div>
-                </div>
-                <div className="home-wrapper">
-                    <div className="home">Projects</div>
-                </div>
-                <div className="contact-me-wrapper">
-                    <div className="home">Contact Me</div>
-                </div>
+                </Link>
+                <Link to="/about" style={{ textDecoration: 'none', width: '100%' }}>
+                    <div className="home-wrapper">
+                        <div className="home">About Me</div>
+                    </div>
+                </Link>
+                <Link to="/skills" style={{ textDecoration: 'none', width: '100%' }}>
+                    <div className="home-wrapper">
+                        <div className="home">Skills</div>
+                    </div>
+                </Link>
+                <Link to="/projects" style={{ textDecoration: 'none', width: '100%' }}>
+                    <div className="home-wrapper">
+                        <div className="home">Projects</div>
+                    </div>
+                </Link>
+                <Link to="/contact" style={{ textDecoration: 'none', width: '100%' }}>
+                    <div className="contact-me-wrapper">
+                        <div className="home">Contact Me</div>
+                    </div>
+                </Link>
             </div>
             <div className="main-content">
                 <div className="info-card-welcome">
@@ -37,26 +47,34 @@ const LogoColapsebleNavBar = () => {
                     </InfoCard>
                 </div>
                 <div className="info-card-grid">
-                    <InfoCard title="About Me">
-                        <p>I am a passionate developer...</p>
-                    </InfoCard>
-                    <InfoCard title="Skills">
-                        <ul>
-                            <li>React</li>
-                            <li>JavaScript</li>
-                            <li>CSS</li>
-                        </ul>
-                    </InfoCard>
-                    <InfoCard title="Projects">
-                        <p>Check out my latest projects...</p>
-                    </InfoCard>
-                    <InfoCard title="Contact">
-                        <p>Get in touch with me here:</p>
-                        <ul>
-                            <li>Email:</li>
-                            <li>Phone:</li>
-                        </ul>
-                    </InfoCard>
+                    <Link to="/about" style={{ textDecoration: 'none' }}>
+                        <InfoCard title="About Me">
+                            <p>I am a passionate developer...</p>
+                        </InfoCard>
+                    </Link>
+                    <Link to="/skills" style={{ textDecoration: 'none' }}>
+                        <InfoCard title="Skills">
+                            <ul>
+                                <li>React</li>
+                                <li>JavaScript</li>
+                                <li>CSS</li>
+                            </ul>
+                        </InfoCard>
+                    </Link>
+                    <Link to="/projects" style={{ textDecoration: 'none' }}>
+                        <InfoCard title="Projects">
+                            <p>Check out my latest projects...</p>
+                        </InfoCard>
+                    </Link>
+                    <Link to="/contact" style={{ textDecoration: 'none' }}>
+                        <InfoCard title="Contact">
+                            <p>Get in touch with me here:</p>
+                            <ul>
+                                <li>Email:</li>
+                                <li>Phone:</li>
+                            </ul>
+                        </InfoCard>
+                    </Link>
                 </div>
             </div>
         </div>

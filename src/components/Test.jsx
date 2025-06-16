@@ -1,5 +1,5 @@
 import './../css/navBarlogo.css';
-
+import InfoCard from './InfoCard';
 
 const LogoColapsebleNavBar = () => {
     return (
@@ -17,7 +17,8 @@ const LogoColapsebleNavBar = () => {
                     <div className="home">Home</div>
                 </div>
                 <div className="home-wrapper">
-                    <div className="home">Timeline</div>
+                    <div className="home">About Me
+                    </div>
                 </div>
                 <div className="home-wrapper">
                     <div className="home">Skills</div>
@@ -29,14 +30,37 @@ const LogoColapsebleNavBar = () => {
                     <div className="home">Contact Me</div>
                 </div>
             </div>
-            <div className="logo-colapseble-nav-bar-child" />
-            <div className="logo-colapseble-nav-bar-item" />
-            <div className="logo-colapseble-nav-bar-inner" />
-            <div className="frame-div" />
-            <div className="logo-colapseble-nav-bar-child1" />
-            <div className="info-card">
-                <div className="title">Title</div>
+            <div className="main-content">
+                <div className="info-card-welcome">
+                    <InfoCard title="Welcome">
+                        <p>Welcome to my portfolio!</p>
+                    </InfoCard>
+                </div>
+                <div className="info-card-grid">
+                    <InfoCard title="About Me">
+                        <p>I am a passionate developer...</p>
+                    </InfoCard>
+                    <InfoCard title="Skills">
+                        <ul>
+                            <li>React</li>
+                            <li>JavaScript</li>
+                            <li>CSS</li>
+                        </ul>
+                    </InfoCard>
+                    <InfoCard title="Projects">
+                        <p>Check out my latest projects...</p>
+                    </InfoCard>
+                    <InfoCard title="Contact">
+                        <p>Get in touch with me here:</p>
+                        <ul>
+                            <li>Email:</li>
+                            <li>Phone:</li>
+                        </ul>
+                    </InfoCard>
+                </div>
             </div>
-        </div>);
+        </div>
+    );
 };
+
 export default LogoColapsebleNavBar;

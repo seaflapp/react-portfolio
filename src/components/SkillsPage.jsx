@@ -8,7 +8,13 @@ const SkillsPage = () => (
       <li>React</li>
       <li>JavaScript</li>
       <li>CSS</li>
-      <li>And more...</li>
+      <li>HTML</li>
+      <li>SQL</li>
+      <li>Git</li>
+      <li>Linux</li>
+      <li>Windows</li>
+      <li>VSCode</li>
+      <li>Cursor</li>
     </ul>
   </MainLayout>
 );

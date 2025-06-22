@@ -45,6 +45,19 @@ const MainLayout = ({ children, pageTitle }) => (
           <div className="home">Contact Me</div>
         </div>
       </Link>
+      
+      {/* GitHub Link at Bottom */}
+      <div className="github-link-container">
+        <a 
+          href="https://github.com/seaflapp" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="github-link"
+        >
+          <span className="github-icon">📝</span>
+          <span className="github-text">GitHub</span>
+        </a>
+      </div>
     </div>
     <div className="main-content">
       <div className="info-card-welcome">

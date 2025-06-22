@@ -47,6 +47,19 @@ const LogoColapsebleNavBar = () => {
                         <div className="home">Contact Me</div>
                     </div>
                 </Link>
+                
+                {/* GitHub Link at Bottom */}
+                <div className="github-link-container">
+                    <a 
+                        href="https://github.com/seaflapp" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="github-link"
+                    >
+                        <span className="github-icon">📝</span>
+                        <span className="github-text">GitHub</span>
+                    </a>
+                </div>
             </div>
             <div className="main-content">
                 <div className="info-card-welcome">
@@ -57,7 +70,7 @@ const LogoColapsebleNavBar = () => {
                 <div className="info-card-grid">
                     <Link to="/about" style={{ textDecoration: 'none' }}>
                         <InfoCard title="About Me">
-                            <p>I am a passionate developer...</p>
+                            <p>I am Martin Dørmænen and I am a student at Digitaletalenter.</p>
                         </InfoCard>
                     </Link>
                     <Link to="/skills" style={{ textDecoration: 'none' }}>
@@ -71,15 +84,15 @@ const LogoColapsebleNavBar = () => {
                     </Link>
                     <Link to="/projects" style={{ textDecoration: 'none' }}>
                         <InfoCard title="Projects">
-                            <p>Check out my latest projects...</p>
+                            <p>here are some examples of my work</p>
                         </InfoCard>
                     </Link>
                     <Link to="/contact" style={{ textDecoration: 'none' }}>
                         <InfoCard title="Contact">
                             <p>Get in touch with me here:</p>
                             <ul>
-                                <li>Email:</li>
-                                <li>Phone:</li>
+                                <li>Email: martin.digitaletalenter@gmail.com</li>
+                                <li>Phone: +47 988 65 987</li>
                             </ul>
                         </InfoCard>
                     </Link>

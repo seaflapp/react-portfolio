@@ -12,21 +12,13 @@ const SkillsPage = () => (
             <li><span className="skill-icon">🟨</span>JavaScript</li>
             <li><span className="skill-icon">🎨</span>CSS</li>
             <li><span className="skill-icon">🌐</span>HTML</li>
-            <li><span className="skill-icon">🔷</span>TypeScript</li>
-            <li><span className="skill-icon">🎯</span>Bootstrap</li>
-            <li><span className="skill-icon">📱</span>Responsive Design</li>
           </ul>
         </InfoCard>
         
         <InfoCard title="Backend">
           <ul>
             <li><span className="skill-icon">🟢</span>Node.js</li>
-            <li><span className="skill-icon">🚀</span>Express.js</li>
             <li><span className="skill-icon">🗄️</span>SQL</li>
-            <li><span className="skill-icon">🍃</span>MongoDB</li>
-            <li><span className="skill-icon">🔗</span>REST APIs</li>
-            <li><span className="skill-icon">🔐</span>Authentication</li>
-            <li><span className="skill-icon">💾</span>Database Design</li>
           </ul>
         </InfoCard>
       </div>
@@ -39,8 +31,7 @@ const SkillsPage = () => (
             <li><span className="skill-icon">🪟</span>Windows</li>
             <li><span className="skill-icon">💻</span>VSCode</li>
             <li><span className="skill-icon">✏️</span>Cursor</li>
-            <li><span className="skill-icon">🐳</span>Docker</li>
-            <li><span className="skill-icon">🔄</span>Agile/Scrum</li>
+            <li><span className="skill-icon">✏️</span>Figma</li>
           </ul>
         </InfoCard>
       </div>

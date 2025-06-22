@@ -11,6 +11,13 @@ margin: 0; line-height: normal;
 --color-darkorchid: #8d43d1;
 --color-mediumslateblue: #5d46db;
 --color-darkslateblue: #301a45;
+/* Animated Background Colors */
+--color-accent-1: #ff6b6b;
+--color-accent-2: #4ecdc4;
+--color-accent-3: #45b7d1;
+--color-accent-4: #96ceb4;
+--color-accent-5: #feca57;
+--color-accent-6: #ff9ff3;
 /* BorderRadius */
 --br-15: 15px;
 /* Font */

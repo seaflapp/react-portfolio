@@ -5,6 +5,14 @@ import { Link } from 'react-router-dom';
 const LogoColapsebleNavBar = () => {
     return (
         <div className="logo-colapseble-nav-bar">
+            {/* Animated Background Shapes */}
+            <div className="floating-shape-1"></div>
+            <div className="floating-shape-2"></div>
+            <div className="floating-shape-3"></div>
+            <div className="floating-shape-4"></div>
+            <div className="floating-shape-5"></div>
+            <div className="floating-shape-6"></div>
+            
             <div className="nav-bar">
                 <div className="current-page-name">Home</div>
             </div>

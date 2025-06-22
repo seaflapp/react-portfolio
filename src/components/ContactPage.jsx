@@ -9,6 +9,7 @@ const ContactPage = () => (
         <li>Email: <a href="mailto:contact@example.com">contact@example.com</a></li>
         <li>Phone: <a href="tel:+1234567890">+1234567890</a></li>
     </ul>
+
   </MainLayout>
 );
 

@@ -25,3 +25,24 @@ margin: 0; line-height: normal;
 /* FontSize */
 --font-size-24: 24px;
 }
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  body {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+  :root {
+    --font-size-24: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+    padding: 0 5px;
+  }
+  :root {
+    --font-size-24: 16px;
+  }
+}

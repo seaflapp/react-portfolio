@@ -91,7 +91,7 @@ const LogoColapsebleNavBar = () => {
                         <InfoCard title="Contact">
                             <p>Get in touch with me here:</p>
                             <ul>
-                                <li>Email: martin.digitaletalenter@gmail.com</li>
+                                <li>Email: Martin.960@hotmail.com </li>
                                 <li>Phone: +47 988 65 987</li>
                             </ul>
                         </InfoCard>

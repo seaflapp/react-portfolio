@@ -121,3 +121,22 @@ margin: 0; line-height: normal;
   border-radius: 30px;
   border: 2px solid rgba(255,255,255,0.08);
 }
+
+.about-info-card a {
+  color: var(--color-accent-2);
+  font-weight: 600;
+  text-decoration: underline;
+  background: linear-gradient(90deg, var(--color-accent-2), var(--color-accent-3));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  transition: text-shadow 0.2s, color 0.2s;
+}
+
+.about-info-card a:hover {
+  text-shadow: 0 0 8px var(--color-accent-3), 0 0 2px var(--color-accent-2);
+  color: var(--color-accent-3);
+  -webkit-text-fill-color: var(--color-accent-3);
+  text-decoration: underline wavy;
+}

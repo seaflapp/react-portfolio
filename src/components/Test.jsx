@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const LogoColapsebleNavBar = () => {
     return (
-        <div className="logo-colapseble-nav-bar">
+        <div className="logo-colapseble-nav-bar main-glass-bg">
             {/* Animated Background Shapes */}
             <div className="floating-shape-1"></div>
             <div className="floating-shape-2"></div>
@@ -70,7 +70,7 @@ const LogoColapsebleNavBar = () => {
                 <div className="info-card-grid">
                     <Link to="/about" style={{ textDecoration: 'none' }}>
                         <InfoCard title="About Me">
-                            <p>I am Martin Dørmænen and I am a student at Digitaletalenter.</p>
+                            <p>My name is Martin Dørmænen and I am a frontend developer. My goal is to become a fullstack developer with a focus on cybersecurity and ethical hacking.</p>
                         </InfoCard>
                     </Link>
                     <Link to="/skills" style={{ textDecoration: 'none' }}>

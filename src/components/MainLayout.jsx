@@ -2,7 +2,7 @@ import './../css/navBarlogo.css';
 import { Link } from 'react-router-dom';
 
 const MainLayout = ({ children, pageTitle }) => (
-  <div className="logo-colapseble-nav-bar">
+  <div className="logo-colapseble-nav-bar main-glass-bg">
     {/* Animated Background Shapes */}
     <div className="floating-shape-1"></div>
     <div className="floating-shape-2"></div>

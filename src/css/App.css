@@ -46,3 +46,78 @@ margin: 0; line-height: normal;
     --font-size-24: 16px;
   }
 }
+
+/* Special AboutPage InfoCard Design */
+.about-info-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(93, 70, 219, 0.25) 100%), url('https://www.transparenttextures.com/patterns/stardust.png');
+  border-radius: 30px;
+  box-shadow: 0 8px 40px 0 rgba(93, 70, 219, 0.25), 0 1.5px 8px 0 rgba(255,255,255,0.08);
+  border: 3px solid;
+  border-image: linear-gradient(90deg, var(--color-accent-1), var(--color-accent-2), var(--color-accent-3), var(--color-accent-4), var(--color-accent-5), var(--color-accent-6), var(--color-accent-1)) 1;
+  animation: border-rotate 6s linear infinite;
+  padding: 40px 32px 32px 32px;
+  position: relative;
+  overflow: hidden;
+  z-index: 3;
+}
+
+@keyframes border-rotate {
+  0% {
+    border-image-source: linear-gradient(90deg, var(--color-accent-1), var(--color-accent-2), var(--color-accent-3), var(--color-accent-4), var(--color-accent-5), var(--color-accent-6), var(--color-accent-1));
+  }
+  100% {
+    border-image-source: linear-gradient(450deg, var(--color-accent-1), var(--color-accent-2), var(--color-accent-3), var(--color-accent-4), var(--color-accent-5), var(--color-accent-6), var(--color-accent-1));
+  }
+}
+
+.about-info-card h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, var(--color-accent-1), var(--color-accent-2), var(--color-accent-3));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+}
+
+.about-info-card p {
+  color: #fff;
+  font-size: 1.15rem;
+  margin-bottom: 12px;
+  text-shadow: 0 2px 8px rgba(93, 70, 219, 0.08);
+}
+
+.about-info-card::before {
+  content: '';
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle, var(--color-accent-5) 0%, transparent 70%);
+  opacity: 0.25;
+  z-index: 0;
+  animation: float-about-blob 8s ease-in-out infinite;
+}
+
+@keyframes float-about-blob {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-20px) scale(1.1); }
+}
+
+.about-info-card:hover {
+  backdrop-filter: none;
+}
+
+.main-glass-bg {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.10) 0%, rgba(93, 70, 219, 0.18) 100%),
+    url('https://www.transparenttextures.com/patterns/stardust.png'),
+    linear-gradient(135deg, var(--color-gray-200) 0%, #1a0f2e 50%, var(--color-gray-200) 100%);
+  background-blend-mode: lighten, normal, normal;
+  box-shadow: 0 8px 40px 0 rgba(93, 70, 219, 0.10), 0 1.5px 8px 0 rgba(255,255,255,0.04);
+  border-radius: 30px;
+  border: 2px solid rgba(255,255,255,0.08);
+}

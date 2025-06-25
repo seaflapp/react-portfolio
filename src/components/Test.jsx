@@ -12,6 +12,10 @@ const LogoColapsebleNavBar = () => {
             <div className="floating-shape-4"></div>
             <div className="floating-shape-5"></div>
             <div className="floating-shape-6"></div>
+            <div className="floating-shape-7"></div>
+            <div className="floating-shape-8"></div>
+            <div className="floating-shape-9"></div>
+            <div className="floating-shape-10"></div>
             
             <div className="nav-bar">
                 <div className="current-page-name">Home</div>

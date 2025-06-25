@@ -82,6 +82,31 @@ margin: 0; line-height: normal;
   letter-spacing: 1px;
 }
 
+.about-info-card .title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: var(--color-white);
+  position: relative;
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.skills-grid-container .about-info-card .title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, var(--color-accent-1), var(--color-accent-2), var(--color-accent-3));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
 .about-info-card p {
   color: #fff;
   font-size: 1.15rem;

@@ -1,22 +1,41 @@
+import React, { useState, useEffect } from 'react';
 import './../css/navBarlogo.css';
 import InfoCard from './InfoCard';
 import { Link } from 'react-router-dom';
 
+const SHAPE_SIZES = [110, 60, 30, 80, 70, 90, 80, 60, 40, 90]; // width/height in px for each shape
+
+function getRandomPosition(idx) {
+    const shapeSize = SHAPE_SIZES[idx];
+    const vw = window.innerWidth;
+    const vh = window.innerHeight;
+    const maxLeft = Math.max(0, vw - shapeSize);
+    const maxTop = Math.max(0, vh - shapeSize);
+    const leftPx = Math.floor(Math.random() * maxLeft);
+    const topPx = Math.floor(Math.random() * maxTop);
+    const left = (leftPx / vw) * 100;
+    const top = (topPx / vh) * 100;
+    return { top: `${top}%`, left: `${left}%` };
+}
+
 const LogoColapsebleNavBar = () => {
+    const [shapePositions, setShapePositions] = useState([]);
+
+    useEffect(() => {
+        const positions = Array.from({ length: 10 }, (_, idx) => getRandomPosition(idx));
+        setShapePositions(positions);
+    }, []);
+
     return (
         <div className="logo-colapseble-nav-bar main-glass-bg">
             {/* Animated Background Shapes */}
-            <div className="floating-shape-1"></div>
-            <div className="floating-shape-2"></div>
-            <div className="floating-shape-3"></div>
-            <div className="floating-shape-4"></div>
-            <div className="floating-shape-5"></div>
-            <div className="floating-shape-6"></div>
-            <div className="floating-shape-7"></div>
-            <div className="floating-shape-8"></div>
-            <div className="floating-shape-9"></div>
-            <div className="floating-shape-10"></div>
-            
+            {Array.from({ length: 10 }).map((_, i) => (
+                <div
+                    key={i}
+                    className={`floating-shape-${i + 1}`}
+                    style={shapePositions[i] || {}}
+                ></div>
+            ))}
             <div className="nav-bar">
                 <div className="current-page-name">Home</div>
             </div>

@@ -66,7 +66,7 @@ const LogoColapsebleNavBar = () => {
                     </div>
                 </Link>
                 <Link to="/contact" style={{ textDecoration: 'none', width: '100%' }}>
-                    <div className="contact-me-wrapper">
+                    <div className="nav-contact-info-card">
                         <div className="home">Contact Me</div>
                     </div>
                 </Link>
@@ -86,7 +86,7 @@ const LogoColapsebleNavBar = () => {
             </div>
             <div className="main-content">
                 <div className="info-card-welcome">
-                    <InfoCard title="Welcome">
+                    <InfoCard title="Welcome" className="about-info-card">
                         <p>Welcome to my portfolio!</p>
                     </InfoCard>
                 </div>

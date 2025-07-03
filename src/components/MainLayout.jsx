@@ -65,7 +65,7 @@ const MainLayout = ({ children, pageTitle }) => {
           </div>
         </Link>
         <Link to="/contact" style={{ textDecoration: 'none', width: '100%' }}>
-          <div className="contact-me-wrapper">
+          <div className="nav-contact-info-card">
             <div className="home">Contact Me</div>
           </div>
         </Link>

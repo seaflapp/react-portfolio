@@ -18,7 +18,7 @@ return (
 <div className="home-wrapper">
 <div className="home">Projects</div>
 </div>
-<div className="contact-me-wrapper">
+<div className="nav-contact-info-card">
 <div className="home">Contact Me</div>
 </div>
 </div>);
